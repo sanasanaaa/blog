@@ -14,7 +14,7 @@ __vue采用的方式属于数据劫持+发布订阅模式：__
 
 	3 实现一个数据监听器和指令解析器之间的桥梁，让解析器收到监听器的数据变动的通知，然后去更新视图
 
-<img src='./images/mvvm.png' >
+<img src='http://sanasan.top/images/mvvm.png' >
 
 
 # 关于Vue this.$nextTick 和DOM的更新
@@ -30,9 +30,9 @@ __想法:从绑定的数据发生改变，到更新视图，这个过程是异�
 	(2)主线程之外，还存在一个“任务队列”。只要异步任务有了运行结果，就在“任务队列”中放置一个事件。
 	(3)一旦“执行栈”中的所有同步任务执行完毕，系统就会读取“任务队列”，看看 还有那些时间，那些对应的异步任务这时候哦就结束了等待状态，进入执行栈，开始执行。
 	(4)主线程不断重复（3）
-<img src='./images/js_event_loop.png' >
+<img src='http://sanasan.top/images/js_event_loop.png' >
 ajax异步的过程
-<img src='./images/js_event_loop2.png' >
+<img src='http://sanasan.top/images/js_event_loop2.png' >
 
 __vue的响应式并不是数据改变后，DOM立即变化 而是按照一点的策略进行DOM更新__ 例子:
 
